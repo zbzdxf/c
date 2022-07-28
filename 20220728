@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	    char arr1[] = "yyc";//字符串中字符数为3
+		char arr2[] = { 'y','y','c',};//没有\0作为终点，会一直向后寻找\0，所以长度为随机值
+		char arr3[] = { 'y','y','c','\0', };//添加了\0（转义字符），字符数计算结果为3
+		printf("%d\n", strlen(arr1));
+		printf("%d\n", strlen(arr2));
+		printf("%d\n", strlen(arr3));
+	return 0;
+}
