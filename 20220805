@@ -1,0 +1,85 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+//int main()//++，--
+//{
+//	int a = 10;
+//	int b = ++a;//前置++（先++，后使用）先a+1=11，b再=11
+//	int c = a++;//后置++（先使用，后++）此时a=11，c先使用直接=11，a后再+1=12
+//	printf("%d\n", a);
+//	printf("%d\n", b);
+//	printf("%d\n", c);
+//	return 0;
+//}
+
+//int main()//强制类型转换
+//{
+//	int a = 3.14;//定义的是int，赋值的是double，输出int，会警告
+//	int b = (int)3.14;//类型被转换，不会警告，输出的是int
+//	printf("%d\n", a);
+//	printf("%d\n", b);
+//	return 0;
+//} 
+
+//int main()//&&逻辑与
+//{
+//	int a = 2;//非零为真（1）
+//	int b = 3;//非零为真（1）
+//	int c = 0;//0为假
+//	int d = 0;//0为假
+//	int e= a && b;//真真为真
+//	int f= a && c;//真假为假
+//	int g= c && d;//假假为假
+//	printf("%d\n", e);//真=1
+//	printf("%d\n", f);//假=1
+//	printf("%d\n", g);//假=1
+//	return 0;
+//}
+//int main()//逻辑或
+//{
+//	int a = 2;//非0为真
+//	int b = 3;
+//	int c = 0;
+//	int d = 0;
+//	int e = a || b;//有一个为真，则为真
+//	int f = a || c;
+//	int g = c || d;//都为假0，则为假0
+//	printf("%d\n", e);
+//	printf("%d\n", f);
+//	printf("%d\n", g);
+//	return 0;
+//}
+
+//int main()//三目操作符  exp1?exp2:exp3
+//{			//如果exp1成立，则计算exp2，若exp1不成立，则计算exp3
+//	int a = 2;
+//	int b = 5;
+//	int max = 0;
+//	/*if (a > b)
+//	max = a;
+//	else 
+//		max = b;
+//	printf("%d\n", max);*/
+//
+//	max = a > b ? a : b;//2不大于5，计算exp3，b结果等于b
+//	printf("%d\n", max);
+//	return 0;
+//}
+
+//int main()//逗号表达式
+//{
+//	int a = 5;
+//	int b = 3;
+//	int c = 7;
+//	int d = (a = c - b, b = c + a, c = b - a);//逗号表达式是从左往右依次计算的
+//			//a=7-3=4   b=7+4=11   c=11-4=7=d			
+//	printf("%d\n", d);//输出的是最后一个表达式的结果
+//		return 0;
+//}
+
+//int main()//下标引用操作符和函数调用操作符
+//{
+//	int arr [10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	printf("%d\n", arr[1]);//数组是从0开始的，这里的第一个是2，前面的1称为第0个
+//	//上行中括号[]就是下标引用操作符
+//	return 0;//printf是函数，函数后面的小括号（）就是函数调用操作符
+//}
